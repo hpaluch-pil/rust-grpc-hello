@@ -1,6 +1,6 @@
-# Finsihed gRPC Rust tutorial
+# Finished gRPC Rust tutorial
 
-Here is finished gRPC Rust tutorial
+Here is finished [gRPC](https://grpc.io/) [Rust](https://www.rust-lang.org/) tutorial
 from:
 - https://github.com/hyperium/tonic/blob/master/examples/helloworld-tutorial.md
 
@@ -11,7 +11,9 @@ Install these packages:
 sudo zypper in cmake make gcc glibc-devel g++ rustup git-core
 ```
 
-NOTE: cmake and g++ is required by `prost` (builds protobuf generator written in C++)
+NOTE: `cmake` and `g++` is required by [prost](https://github.com/tokio-rs/prost)
+which builds [protobuf](https://github.com/protocolbuffers/protobuf) generator
+written in C++.
 
 If you did not setup `rustup` yet run:
 ```bash
@@ -44,16 +46,17 @@ Now you can checkout this project:
 ```bash
 mkdir -p ~/projects
 cd ~/projects
-git clone xxxxxx
-cd ../grpc-hello/
+git clone https://github.com/hpaluch-pil/rust-grpc-hello.git
+cd rust-grpc-hello
 ```
 
 Now build this project:
 ```bash
 cargo build
 ```
-It make take quite long, because the `prost` compiles C++ protobuf generator.
-In my case (4 core Celeron N3450) it took about 13 minutes to build.
+It may take quite long, because the [prost](https://github.com/tokio-rs/prost)
+compiles C++ [protobuf](https://github.com/protocolbuffers/protobuf) generator.
+In my case (4 core Celeron N3450) the `cargo build` command took about 13 minutes to build.
 
 In one terminal run server:
 ```bash
@@ -88,6 +91,6 @@ target/debug/build/grpc-hello-5b45552c0b2261f6/out/helloworld.rs
 
 # Resources
 
-gRPC Hello tutorial page:
+[gRPC](https://grpc.io/) Hello tutorial page:
 - https://github.com/hyperium/tonic/blob/master/examples/helloworld-tutorial.md
 
