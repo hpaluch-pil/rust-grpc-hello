@@ -8,10 +8,10 @@ from:
 
 Install these packages:
 ```bash
-sudo zypper in cmake make gcc glibc-devel g++ rustup git-core
+sudo zypper in cmake make gcc glibc-devel gcc-c++ rustup git-core
 ```
 
-NOTE: `cmake` and `g++` is required by [prost](https://github.com/tokio-rs/prost)
+NOTE: `cmake` and `gcc-c++` is required by [prost](https://github.com/tokio-rs/prost)
 which builds [protobuf](https://github.com/protocolbuffers/protobuf) generator
 written in C++.
 
